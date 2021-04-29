@@ -35,6 +35,7 @@
 		EA4D4D41263AE469003DF7E4 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D40263AE469003DF7E4 /* AppRouter.swift */; };
 		EA4D4D4A263AE5F3003DF7E4 /* MyCurrenciesVCFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D49263AE5F3003DF7E4 /* MyCurrenciesVCFactory.swift */; };
 		EA4D4D4C263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D4B263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift */; };
+		EA4D4D53263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D52263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		EA4D4D40263AE469003DF7E4 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		EA4D4D49263AE5F3003DF7E4 /* MyCurrenciesVCFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCurrenciesVCFactory.swift; sourceTree = "<group>"; };
 		EA4D4D4B263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesVCFactory.swift; sourceTree = "<group>"; };
+		EA4D4D52263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesCoordinator.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,6 +281,7 @@
 		EA4D4D00263ADD0D003DF7E4 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D51263AE9F2003DF7E4 /* AllCurrencies */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -318,6 +321,14 @@
 				EA4D4D38263ADD52003DF7E4 /* UITabBarItem+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA4D4D51263AE9F2003DF7E4 /* AllCurrencies */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D52263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift */,
+			);
+			path = AllCurrencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +447,7 @@
 				EA4D4CFE263ADAC6003DF7E4 /* NetworkError.swift in Sources */,
 				EA4D4D36263ADD0D003DF7E4 /* TabbarController.swift in Sources */,
 				EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */,
+				EA4D4D53263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift in Sources */,
 				EA4D4CFA263ADAC6003DF7E4 /* TargetType+Extensions.swift in Sources */,
 				EA4D4D35263ADD0D003DF7E4 /* TabbarView.swift in Sources */,
 				EA4D4CF1263ADAC6003DF7E4 /* CURError.swift in Sources */,
