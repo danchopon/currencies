@@ -28,16 +28,7 @@ class TableView: UITableView {
         translatesAutoresizingMaskIntoConstraints = false
         separatorStyle = .none
         alwaysBounceVertical = false
-        guard let placeholderView = emptyPlaceholderView else  {
-            return
-        }
-        placeholderView.anchor(
-            .centerX(self.centerXAnchor),
-            .centerY(self.centerYAnchor),
-            .width(self.frame.width),
-            .height(self.frame.height)
-        )
-        self.backgroundView = placeholderView
+        self.backgroundView = emptyPlaceholderView
         self.backgroundView?.isHidden = false
         self.backgroundView?.alpha = 0
     }
