@@ -45,6 +45,7 @@
 		EA4D4D6D263AF1B9003DF7E4 /* ContentViewSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D6A263AF1B9003DF7E4 /* ContentViewSetupable.swift */; };
 		EA4D4D6E263AF1B9003DF7E4 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D6B263AF1B9003DF7E4 /* ViewModelable.swift */; };
 		EA4D4D6F263AF1B9003DF7E4 /* ViewControlable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D6C263AF1B9003DF7E4 /* ViewControlable.swift */; };
+		EA4D4D71263AF218003DF7E4 /* BaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D70263AF218003DF7E4 /* BaseContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		EA4D4D6A263AF1B9003DF7E4 /* ContentViewSetupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewSetupable.swift; sourceTree = "<group>"; };
 		EA4D4D6B263AF1B9003DF7E4 /* ViewModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		EA4D4D6C263AF1B9003DF7E4 /* ViewControlable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControlable.swift; sourceTree = "<group>"; };
+		EA4D4D70263AF218003DF7E4 /* BaseContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseContentView.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -378,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				EA4D4D68263AEDB8003DF7E4 /* BaseNavigationController.swift */,
+				EA4D4D70263AF218003DF7E4 /* BaseContentView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				EA4D4CFE263ADAC6003DF7E4 /* NetworkError.swift in Sources */,
 				EA4D4D36263ADD0D003DF7E4 /* TabbarController.swift in Sources */,
 				EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */,
+				EA4D4D71263AF218003DF7E4 /* BaseContentView.swift in Sources */,
 				EA4D4D59263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift in Sources */,
 				EA4D4D65263AECB7003DF7E4 /* AppCoordinator.swift in Sources */,
 				EA4D4D61263AEC25003DF7E4 /* LaunchInstructor.swift in Sources */,
