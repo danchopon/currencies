@@ -12,6 +12,14 @@
 		EA4D4C85263ACE52003DF7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4D4C84263ACE52003DF7E4 /* Assets.xcassets */; };
 		EA4D4C88263ACE52003DF7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4D4C86263ACE52003DF7E4 /* LaunchScreen.storyboard */; };
 		EA4D4C9E263AD08E003DF7E4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4C9D263AD08E003DF7E4 /* Environment.swift */; };
+		EA4D4CF0263ADAC6003DF7E4 /* NetworkActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CDA263ADAC6003DF7E4 /* NetworkActivityLogger.swift */; };
+		EA4D4CF1263ADAC6003DF7E4 /* CURError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CDB263ADAC6003DF7E4 /* CURError.swift */; };
+		EA4D4CF6263ADAC6003DF7E4 /* Decodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CE3263ADAC6003DF7E4 /* Decodable+Extensions.swift */; };
+		EA4D4CF8263ADAC6003DF7E4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CE6263ADAC6003DF7E4 /* NetworkManager.swift */; };
+		EA4D4CFA263ADAC6003DF7E4 /* TargetType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CE9263ADAC6003DF7E4 /* TargetType+Extensions.swift */; };
+		EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CED263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift */; };
+		EA4D4CFE263ADAC6003DF7E4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CEE263ADAC6003DF7E4 /* NetworkError.swift */; };
+		EA4D4CFF263ADAC6003DF7E4 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CEF263ADAC6003DF7E4 /* HTTPStatusCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		EA4D4C9A263AD04B003DF7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA4D4C9B263AD064003DF7E4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		EA4D4C9D263AD08E003DF7E4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		EA4D4CDA263ADAC6003DF7E4 /* NetworkActivityLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityLogger.swift; sourceTree = "<group>"; };
+		EA4D4CDB263ADAC6003DF7E4 /* CURError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CURError.swift; sourceTree = "<group>"; };
+		EA4D4CE3263ADAC6003DF7E4 /* Decodable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decodable+Extensions.swift"; sourceTree = "<group>"; };
+		EA4D4CE6263ADAC6003DF7E4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EA4D4CE9263ADAC6003DF7E4 /* TargetType+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TargetType+Extensions.swift"; sourceTree = "<group>"; };
+		EA4D4CED263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extensions.swift"; sourceTree = "<group>"; };
+		EA4D4CEE263ADAC6003DF7E4 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EA4D4CEF263ADAC6003DF7E4 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +119,7 @@
 		EA4D4C90263ACF39003DF7E4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4CD9263ADAC6003DF7E4 /* Network */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -132,6 +149,7 @@
 		EA4D4C94263ACF54003DF7E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4CD6263ADA8C003DF7E4 /* Protocols */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +195,44 @@
 				EA4D4C9D263AD08E003DF7E4 /* Environment.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EA4D4CD6263ADA8C003DF7E4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EA4D4CD9263ADAC6003DF7E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4CDC263ADAC6003DF7E4 /* Repository */,
+				EA4D4CEA263ADAC6003DF7E4 /* API */,
+				EA4D4CDA263ADAC6003DF7E4 /* NetworkActivityLogger.swift */,
+				EA4D4CDB263ADAC6003DF7E4 /* CURError.swift */,
+				EA4D4CE3263ADAC6003DF7E4 /* Decodable+Extensions.swift */,
+				EA4D4CE6263ADAC6003DF7E4 /* NetworkManager.swift */,
+				EA4D4CE9263ADAC6003DF7E4 /* TargetType+Extensions.swift */,
+				EA4D4CED263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift */,
+				EA4D4CEE263ADAC6003DF7E4 /* NetworkError.swift */,
+				EA4D4CEF263ADAC6003DF7E4 /* HTTPStatusCode.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA4D4CDC263ADAC6003DF7E4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA4D4CEA263ADAC6003DF7E4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4D4CFE263ADAC6003DF7E4 /* NetworkError.swift in Sources */,
+				EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */,
+				EA4D4CFA263ADAC6003DF7E4 /* TargetType+Extensions.swift in Sources */,
+				EA4D4CF1263ADAC6003DF7E4 /* CURError.swift in Sources */,
+				EA4D4CF0263ADAC6003DF7E4 /* NetworkActivityLogger.swift in Sources */,
+				EA4D4CFF263ADAC6003DF7E4 /* HTTPStatusCode.swift in Sources */,
 				EA4D4C7C263ACE51003DF7E4 /* AppDelegate.swift in Sources */,
+				EA4D4CF8263ADAC6003DF7E4 /* NetworkManager.swift in Sources */,
+				EA4D4CF6263ADAC6003DF7E4 /* Decodable+Extensions.swift in Sources */,
 				EA4D4C9E263AD08E003DF7E4 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
