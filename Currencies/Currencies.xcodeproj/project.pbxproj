@@ -37,6 +37,7 @@
 		EA4D4D4C263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D4B263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift */; };
 		EA4D4D53263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D52263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift */; };
 		EA4D4D59263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D58263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift */; };
+		EA4D4D5B263AEB2C003DF7E4 /* AppCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D5A263AEB2C003DF7E4 /* AppCoordinatorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		EA4D4D4B263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesVCFactory.swift; sourceTree = "<group>"; };
 		EA4D4D52263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesCoordinator.swift; sourceTree = "<group>"; };
 		EA4D4D58263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCurrenciesCoordinator.swift; sourceTree = "<group>"; };
+		EA4D4D5A263AEB2C003DF7E4 /* AppCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorFactory.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 		EA4D4C91263ACF43003DF7E4 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D5A263AEB2C003DF7E4 /* AppCoordinatorFactory.swift */,
 				EA4D4D49263AE5F3003DF7E4 /* MyCurrenciesVCFactory.swift */,
 				EA4D4D4B263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift */,
 			);
@@ -466,6 +469,7 @@
 				EA4D4CF0263ADAC6003DF7E4 /* NetworkActivityLogger.swift in Sources */,
 				EA4D4D31263ADD0D003DF7E4 /* Coordinator.swift in Sources */,
 				EA4D4D4A263AE5F3003DF7E4 /* MyCurrenciesVCFactory.swift in Sources */,
+				EA4D4D5B263AEB2C003DF7E4 /* AppCoordinatorFactory.swift in Sources */,
 				EA4D4D33263ADD0D003DF7E4 /* BaseCoordinator.swift in Sources */,
 				EA4D4D4C263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift in Sources */,
 				EA4D4D41263AE469003DF7E4 /* AppRouter.swift in Sources */,
