@@ -50,6 +50,9 @@
 		EA4D4D75263AF32A003DF7E4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */; };
 		EA4D4D7A263AF522003DF7E4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D79263AF522003DF7E4 /* UIView+Layout.swift */; };
 		EA4D4D7D263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */; };
+		EA4D4D81263AF7E8003DF7E4 /* AllCurrenciesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D80263AF7E8003DF7E4 /* AllCurrenciesContentView.swift */; };
+		EA4D4D83263AF805003DF7E4 /* AllCurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D82263AF805003DF7E4 /* AllCurrenciesViewModel.swift */; };
+		EA4D4D85263AF819003DF7E4 /* AllCurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D84263AF819003DF7E4 /* AllCurrenciesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +105,9 @@
 		EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EA4D4D79263AF522003DF7E4 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorOverlayView.swift; sourceTree = "<group>"; };
+		EA4D4D80263AF7E8003DF7E4 /* AllCurrenciesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesContentView.swift; sourceTree = "<group>"; };
+		EA4D4D82263AF805003DF7E4 /* AllCurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesViewModel.swift; sourceTree = "<group>"; };
+		EA4D4D84263AF819003DF7E4 /* AllCurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesViewController.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +237,7 @@
 		EA4D4C95263ACF5A003DF7E4 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D7F263AF7D8003DF7E4 /* AllCurrencies */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -397,6 +404,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		EA4D4D7F263AF7D8003DF7E4 /* AllCurrencies */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D80263AF7E8003DF7E4 /* AllCurrenciesContentView.swift */,
+				EA4D4D82263AF805003DF7E4 /* AllCurrenciesViewModel.swift */,
+				EA4D4D84263AF819003DF7E4 /* AllCurrenciesViewController.swift */,
+			);
+			path = AllCurrencies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -537,11 +554,14 @@
 				EA4D4D30263ADD0D003DF7E4 /* Router.swift in Sources */,
 				EA4D4D75263AF32A003DF7E4 /* BaseViewController.swift in Sources */,
 				EA4D4D3F263ADFD9003DF7E4 /* AppServices.swift in Sources */,
+				EA4D4D83263AF805003DF7E4 /* AllCurrenciesViewModel.swift in Sources */,
 				EA4D4D3E263ADFD9003DF7E4 /* DeepLinkOption.swift in Sources */,
 				EA4D4C7C263ACE51003DF7E4 /* AppDelegate.swift in Sources */,
 				EA4D4D2F263ADD0D003DF7E4 /* Presentable.swift in Sources */,
+				EA4D4D81263AF7E8003DF7E4 /* AllCurrenciesContentView.swift in Sources */,
 				EA4D4D73263AF268003DF7E4 /* BaseViewModel.swift in Sources */,
 				EA4D4CF8263ADAC6003DF7E4 /* NetworkManager.swift in Sources */,
+				EA4D4D85263AF819003DF7E4 /* AllCurrenciesViewController.swift in Sources */,
 				EA4D4D32263ADD0D003DF7E4 /* CoordinatorFactory.swift in Sources */,
 				EA4D4D39263ADD52003DF7E4 /* UITabBarItem+Extensions.swift in Sources */,
 				EA4D4CF6263ADAC6003DF7E4 /* Decodable+Extensions.swift in Sources */,
