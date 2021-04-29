@@ -38,6 +38,8 @@
 		EA4D4D53263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D52263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift */; };
 		EA4D4D59263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D58263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift */; };
 		EA4D4D5B263AEB2C003DF7E4 /* AppCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D5A263AEB2C003DF7E4 /* AppCoordinatorFactory.swift */; };
+		EA4D4D61263AEC25003DF7E4 /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D60263AEC25003DF7E4 /* LaunchInstructor.swift */; };
+		EA4D4D63263AEC50003DF7E4 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D62263AEC50003DF7E4 /* Instructor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		EA4D4D52263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesCoordinator.swift; sourceTree = "<group>"; };
 		EA4D4D58263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCurrenciesCoordinator.swift; sourceTree = "<group>"; };
 		EA4D4D5A263AEB2C003DF7E4 /* AppCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorFactory.swift; sourceTree = "<group>"; };
+		EA4D4D60263AEC25003DF7E4 /* LaunchInstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
+		EA4D4D62263AEC50003DF7E4 /* Instructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				EA4D4CD9263ADAC6003DF7E4 /* Network */,
+				EA4D4D60263AEC25003DF7E4 /* LaunchInstructor.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				EA4D4D3A263ADD76003DF7E4 /* Services.swift */,
+				EA4D4D62263AEC50003DF7E4 /* Instructor.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 				EA4D4D36263ADD0D003DF7E4 /* TabbarController.swift in Sources */,
 				EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */,
 				EA4D4D59263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift in Sources */,
+				EA4D4D61263AEC25003DF7E4 /* LaunchInstructor.swift in Sources */,
 				EA4D4D53263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift in Sources */,
 				EA4D4CFA263ADAC6003DF7E4 /* TargetType+Extensions.swift in Sources */,
 				EA4D4D35263ADD0D003DF7E4 /* TabbarView.swift in Sources */,
@@ -485,6 +492,7 @@
 				EA4D4D39263ADD52003DF7E4 /* UITabBarItem+Extensions.swift in Sources */,
 				EA4D4CF6263ADAC6003DF7E4 /* Decodable+Extensions.swift in Sources */,
 				EA4D4D34263ADD0D003DF7E4 /* TabbarCoordinator.swift in Sources */,
+				EA4D4D63263AEC50003DF7E4 /* Instructor.swift in Sources */,
 				EA4D4C9E263AD08E003DF7E4 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
