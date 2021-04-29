@@ -47,6 +47,7 @@
 		EA4D4D6F263AF1B9003DF7E4 /* ViewControlable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D6C263AF1B9003DF7E4 /* ViewControlable.swift */; };
 		EA4D4D71263AF218003DF7E4 /* BaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D70263AF218003DF7E4 /* BaseContentView.swift */; };
 		EA4D4D73263AF268003DF7E4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D72263AF268003DF7E4 /* BaseViewModel.swift */; };
+		EA4D4D75263AF32A003DF7E4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		EA4D4D6C263AF1B9003DF7E4 /* ViewControlable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControlable.swift; sourceTree = "<group>"; };
 		EA4D4D70263AF218003DF7E4 /* BaseContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseContentView.swift; sourceTree = "<group>"; };
 		EA4D4D72263AF268003DF7E4 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -384,6 +386,7 @@
 				EA4D4D68263AEDB8003DF7E4 /* BaseNavigationController.swift */,
 				EA4D4D70263AF218003DF7E4 /* BaseContentView.swift */,
 				EA4D4D72263AF268003DF7E4 /* BaseViewModel.swift */,
+				EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */,
 				EA4D4D69263AEDB8003DF7E4 /* BaseNavigationController.swift in Sources */,
 				EA4D4D30263ADD0D003DF7E4 /* Router.swift in Sources */,
+				EA4D4D75263AF32A003DF7E4 /* BaseViewController.swift in Sources */,
 				EA4D4D3F263ADFD9003DF7E4 /* AppServices.swift in Sources */,
 				EA4D4D3E263ADFD9003DF7E4 /* DeepLinkOption.swift in Sources */,
 				EA4D4C7C263ACE51003DF7E4 /* AppDelegate.swift in Sources */,
