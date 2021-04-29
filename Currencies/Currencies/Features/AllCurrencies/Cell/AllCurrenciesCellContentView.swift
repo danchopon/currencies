@@ -63,6 +63,7 @@ private extension AllCurrenciesCellContentView {
     func makeActionButton() -> UIButton {
         let button = UIButton()
         button.titleLabel?.font = .systemFont(ofSize: 15)
+        button.setTitleColor(UIColor.black, for: .normal)
         return button
     }
     
