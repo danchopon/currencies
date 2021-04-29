@@ -5,7 +5,11 @@ public extension UIView {
         let radius = self.frame.width / 2
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
-     }
+    }
+    
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
 }
 
 public struct AnchoredConstraints {
