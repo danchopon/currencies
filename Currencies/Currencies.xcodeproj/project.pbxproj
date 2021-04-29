@@ -40,6 +40,7 @@
 		EA4D4D5B263AEB2C003DF7E4 /* AppCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D5A263AEB2C003DF7E4 /* AppCoordinatorFactory.swift */; };
 		EA4D4D61263AEC25003DF7E4 /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D60263AEC25003DF7E4 /* LaunchInstructor.swift */; };
 		EA4D4D63263AEC50003DF7E4 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D62263AEC50003DF7E4 /* Instructor.swift */; };
+		EA4D4D65263AECB7003DF7E4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D64263AECB7003DF7E4 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		EA4D4D5A263AEB2C003DF7E4 /* AppCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorFactory.swift; sourceTree = "<group>"; };
 		EA4D4D60263AEC25003DF7E4 /* LaunchInstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
 		EA4D4D62263AEC50003DF7E4 /* Instructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
+		EA4D4D64263AECB7003DF7E4 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			children = (
 				EA4D4C9C263AD079003DF7E4 /* Configuration */,
 				EA4D4C7B263ACE51003DF7E4 /* AppDelegate.swift */,
+				EA4D4D64263AECB7003DF7E4 /* AppCoordinator.swift */,
 				EA4D4D40263AE469003DF7E4 /* AppRouter.swift */,
 				EA4D4C86263ACE52003DF7E4 /* LaunchScreen.storyboard */,
 			);
@@ -468,6 +471,7 @@
 				EA4D4D36263ADD0D003DF7E4 /* TabbarController.swift in Sources */,
 				EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */,
 				EA4D4D59263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift in Sources */,
+				EA4D4D65263AECB7003DF7E4 /* AppCoordinator.swift in Sources */,
 				EA4D4D61263AEC25003DF7E4 /* LaunchInstructor.swift in Sources */,
 				EA4D4D53263AEA00003DF7E4 /* AllCurrenciesCoordinator.swift in Sources */,
 				EA4D4CFA263ADAC6003DF7E4 /* TargetType+Extensions.swift in Sources */,
