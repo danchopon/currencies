@@ -11,6 +11,8 @@ class BaseViewController<ContentView: BaseContentView, ViewModel: BaseViewModel>
     let contentView: ContentView
     let viewModel: ViewModel
     
+    let activityIndicatorOverlayView = ActivityIndicatorOverlayView()
+    
     init(contentView: ContentView, viewModel: ViewModel) {
         self.contentView = contentView
         self.viewModel = viewModel
@@ -40,6 +42,41 @@ class BaseViewController<ContentView: BaseContentView, ViewModel: BaseViewModel>
 
 extension BaseViewController: BaseViewModelDelegate {
     func viewModel(_ viewModel: ViewModelable, didUpdateLoadingState state: LoadingState) {
+        switch state {
+        case .loaded:
+            hideActivityIndicatorOverlayView()
+        case .loading:
+            showActivityIndicatorOverlayView(on: contentView)
+        }
+    }
+}
+
+extension BaseViewController {
+    func showActivityIndicatorOverlayView(on view: UIView? = nil) {
+        contentView.addSubview(activityIndicatorOverlayView)
+        changeInteractions(enabled: false)
+        activityIndicatorOverlayView.frame = view?.frame ?? self.view.frame
+        activityIndicatorOverlayView.anchor(
+            .centerY(view?.centerYAnchor ?? self.view.centerYAnchor),
+            .centerX(view?.centerXAnchor ?? self.view.centerXAnchor)
+        )
         
+        DispatchQueue.main.async {
+            self.activityIndicatorOverlayView.show()
+        }
+    }
+    
+    func hideActivityIndicatorOverlayView() {
+        changeInteractions(enabled: true)
+        DispatchQueue.main.async {
+            self.activityIndicatorOverlayView.hide()
+        }
+        activityIndicatorOverlayView.removeFromSuperview()
+    }
+    
+    private func changeInteractions(enabled: Bool) {
+        view.isUserInteractionEnabled = enabled
+        navigationController?.navigationBar.isUserInteractionEnabled = enabled
+        tabBarController?.tabBar.isUserInteractionEnabled = enabled
     }
 }

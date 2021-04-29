@@ -49,6 +49,7 @@
 		EA4D4D73263AF268003DF7E4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D72263AF268003DF7E4 /* BaseViewModel.swift */; };
 		EA4D4D75263AF32A003DF7E4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */; };
 		EA4D4D7A263AF522003DF7E4 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D79263AF522003DF7E4 /* UIView+Layout.swift */; };
+		EA4D4D7D263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		EA4D4D72263AF268003DF7E4 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EA4D4D79263AF522003DF7E4 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorOverlayView.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -378,6 +380,7 @@
 		EA4D4D66263AEDA9003DF7E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D7B263AF5CE003DF7E4 /* ActivityIndicator */,
 				EA4D4D67263AEDB3003DF7E4 /* Base */,
 			);
 			path = Components;
@@ -392,6 +395,14 @@
 				EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EA4D4D7B263AF5CE003DF7E4 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */,
+			);
+			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +538,7 @@
 				EA4D4D4C263AE67E003DF7E4 /* AllCurrenciesVCFactory.swift in Sources */,
 				EA4D4D41263AE469003DF7E4 /* AppRouter.swift in Sources */,
 				EA4D4CFF263ADAC6003DF7E4 /* HTTPStatusCode.swift in Sources */,
+				EA4D4D7D263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift in Sources */,
 				EA4D4D7A263AF522003DF7E4 /* UIView+Layout.swift in Sources */,
 				EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */,
 				EA4D4D69263AEDB8003DF7E4 /* BaseNavigationController.swift in Sources */,
