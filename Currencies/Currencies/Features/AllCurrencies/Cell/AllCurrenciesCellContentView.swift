@@ -33,14 +33,14 @@ extension AllCurrenciesCellContentView: BaseContentView {
     public func setConstraints() {
         titleLabel.anchor(
             .centerY(actionButton.centerYAnchor),
-            .leading(leadingAnchor, constant: 8),
+            .leading(leadingAnchor, constant: 16),
             .trailing(actionButton.leadingAnchor, constant: 8)
         )
         actionButton.anchor(
             .top(topAnchor, constant: 8),
-            .trailing(trailingAnchor, constant: 8),
-            .height(40),
-            .width(60)
+            .trailing(trailingAnchor, constant: 16),
+            .height(35),
+            .width(70)
         )
         separatorView.anchor(
             .top(actionButton.bottomAnchor, constant: 8),
