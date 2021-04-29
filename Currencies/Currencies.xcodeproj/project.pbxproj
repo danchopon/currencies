@@ -57,6 +57,7 @@
 		EA4D4D8A263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D89263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift */; };
 		EA4D4D8D263AFCAC003DF7E4 /* AllCurrenciesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D8C263AFCAC003DF7E4 /* AllCurrenciesEnum.swift */; };
 		EA4D4D91263AFE49003DF7E4 /* AllCurrenciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D90263AFE49003DF7E4 /* AllCurrenciesCell.swift */; };
+		EA4D4D95263B01F2003DF7E4 /* EmptyPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D94263B01F2003DF7E4 /* EmptyPlaceholderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		EA4D4D89263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesCellContentView.swift; sourceTree = "<group>"; };
 		EA4D4D8C263AFCAC003DF7E4 /* AllCurrenciesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesEnum.swift; sourceTree = "<group>"; };
 		EA4D4D90263AFE49003DF7E4 /* AllCurrenciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesCell.swift; sourceTree = "<group>"; };
+		EA4D4D94263B01F2003DF7E4 /* EmptyPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPlaceholderView.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -398,6 +400,7 @@
 				EA4D4D67263AEDB3003DF7E4 /* Base */,
 				EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */,
 				EA4D4D86263AF94C003DF7E4 /* TableViewCell.swift */,
+				EA4D4D94263B01F2003DF7E4 /* EmptyPlaceholderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 			files = (
 				EA4D4CFE263ADAC6003DF7E4 /* NetworkError.swift in Sources */,
 				EA4D4D36263ADD0D003DF7E4 /* TabbarController.swift in Sources */,
+				EA4D4D95263B01F2003DF7E4 /* EmptyPlaceholderView.swift in Sources */,
 				EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */,
 				EA4D4D71263AF218003DF7E4 /* BaseContentView.swift in Sources */,
 				EA4D4D59263AEAD7003DF7E4 /* MyCurrenciesCoordinator.swift in Sources */,
