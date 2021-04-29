@@ -41,6 +41,7 @@
 		EA4D4D61263AEC25003DF7E4 /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D60263AEC25003DF7E4 /* LaunchInstructor.swift */; };
 		EA4D4D63263AEC50003DF7E4 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D62263AEC50003DF7E4 /* Instructor.swift */; };
 		EA4D4D65263AECB7003DF7E4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D64263AECB7003DF7E4 /* AppCoordinator.swift */; };
+		EA4D4D69263AEDB8003DF7E4 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D68263AEDB8003DF7E4 /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		EA4D4D60263AEC25003DF7E4 /* LaunchInstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
 		EA4D4D62263AEC50003DF7E4 /* Instructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		EA4D4D64263AECB7003DF7E4 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EA4D4D68263AEDB8003DF7E4 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 		EA4D4C93263ACF4F003DF7E4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D66263AEDA9003DF7E4 /* Components */,
 				EA4D4D37263ADD3F003DF7E4 /* Extensions */,
 				EA4D4C96263ACF93003DF7E4 /* Resource */,
 			);
@@ -354,6 +357,22 @@
 			path = MyCurrencies;
 			sourceTree = "<group>";
 		};
+		EA4D4D66263AEDA9003DF7E4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D67263AEDB3003DF7E4 /* Base */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EA4D4D67263AEDB3003DF7E4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D68263AEDB8003DF7E4 /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -486,6 +505,7 @@
 				EA4D4D41263AE469003DF7E4 /* AppRouter.swift in Sources */,
 				EA4D4CFF263ADAC6003DF7E4 /* HTTPStatusCode.swift in Sources */,
 				EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */,
+				EA4D4D69263AEDB8003DF7E4 /* BaseNavigationController.swift in Sources */,
 				EA4D4D30263ADD0D003DF7E4 /* Router.swift in Sources */,
 				EA4D4D3F263ADFD9003DF7E4 /* AppServices.swift in Sources */,
 				EA4D4D3E263ADFD9003DF7E4 /* DeepLinkOption.swift in Sources */,
