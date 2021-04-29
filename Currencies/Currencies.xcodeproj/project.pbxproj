@@ -32,6 +32,7 @@
 		EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D3A263ADD76003DF7E4 /* Services.swift */; };
 		EA4D4D3E263ADFD9003DF7E4 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D3C263ADFD9003DF7E4 /* DeepLinkOption.swift */; };
 		EA4D4D3F263ADFD9003DF7E4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D3D263ADFD9003DF7E4 /* AppServices.swift */; };
+		EA4D4D41263AE469003DF7E4 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D40263AE469003DF7E4 /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		EA4D4D3A263ADD76003DF7E4 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		EA4D4D3C263ADFD9003DF7E4 /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
 		EA4D4D3D263ADFD9003DF7E4 /* AppServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		EA4D4D40263AE469003DF7E4 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 			children = (
 				EA4D4C9C263AD079003DF7E4 /* Configuration */,
 				EA4D4C7B263ACE51003DF7E4 /* AppDelegate.swift */,
+				EA4D4D40263AE469003DF7E4 /* AppRouter.swift */,
 				EA4D4C86263ACE52003DF7E4 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -433,6 +436,7 @@
 				EA4D4CF0263ADAC6003DF7E4 /* NetworkActivityLogger.swift in Sources */,
 				EA4D4D31263ADD0D003DF7E4 /* Coordinator.swift in Sources */,
 				EA4D4D33263ADD0D003DF7E4 /* BaseCoordinator.swift in Sources */,
+				EA4D4D41263AE469003DF7E4 /* AppRouter.swift in Sources */,
 				EA4D4CFF263ADAC6003DF7E4 /* HTTPStatusCode.swift in Sources */,
 				EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */,
 				EA4D4D30263ADD0D003DF7E4 /* Router.swift in Sources */,
