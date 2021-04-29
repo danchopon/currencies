@@ -54,6 +54,7 @@
 		EA4D4D83263AF805003DF7E4 /* AllCurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D82263AF805003DF7E4 /* AllCurrenciesViewModel.swift */; };
 		EA4D4D85263AF819003DF7E4 /* AllCurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D84263AF819003DF7E4 /* AllCurrenciesViewController.swift */; };
 		EA4D4D87263AF94C003DF7E4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D86263AF94C003DF7E4 /* TableViewCell.swift */; };
+		EA4D4D8A263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D89263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		EA4D4D82263AF805003DF7E4 /* AllCurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesViewModel.swift; sourceTree = "<group>"; };
 		EA4D4D84263AF819003DF7E4 /* AllCurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesViewController.swift; sourceTree = "<group>"; };
 		EA4D4D86263AF94C003DF7E4 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EA4D4D89263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrenciesCellContentView.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -410,11 +412,20 @@
 		EA4D4D7F263AF7D8003DF7E4 /* AllCurrencies */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D88263AF9A4003DF7E4 /* Cell */,
 				EA4D4D80263AF7E8003DF7E4 /* AllCurrenciesContentView.swift */,
 				EA4D4D82263AF805003DF7E4 /* AllCurrenciesViewModel.swift */,
 				EA4D4D84263AF819003DF7E4 /* AllCurrenciesViewController.swift */,
 			);
 			path = AllCurrencies;
+			sourceTree = "<group>";
+		};
+		EA4D4D88263AF9A4003DF7E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D89263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,6 +581,7 @@
 				EA4D4D39263ADD52003DF7E4 /* UITabBarItem+Extensions.swift in Sources */,
 				EA4D4CF6263ADAC6003DF7E4 /* Decodable+Extensions.swift in Sources */,
 				EA4D4D34263ADD0D003DF7E4 /* TabbarCoordinator.swift in Sources */,
+				EA4D4D8A263AF9BD003DF7E4 /* AllCurrenciesCellContentView.swift in Sources */,
 				EA4D4D63263AEC50003DF7E4 /* Instructor.swift in Sources */,
 				EA4D4D6D263AF1B9003DF7E4 /* ContentViewSetupable.swift in Sources */,
 				EA4D4D6F263AF1B9003DF7E4 /* ViewControlable.swift in Sources */,
