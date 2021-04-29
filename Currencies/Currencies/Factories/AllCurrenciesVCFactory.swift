@@ -11,7 +11,7 @@ protocol AllCurrenciesFactory {
     var services: Services { get set }
     init(services: Services)
     
-    func makeAllCurrenciesVC() -> UIViewController
+    func makeAllCurrenciesViewController() -> AllCurrenciesViewController
 }
 
 final class AllCurrenciesVCFactory: AllCurrenciesFactory {
@@ -21,7 +21,9 @@ final class AllCurrenciesVCFactory: AllCurrenciesFactory {
         self.services = services
     }
     
-    func makeAllCurrenciesVC() -> UIViewController {
-        return UIViewController()
+    func makeAllCurrenciesViewController() -> AllCurrenciesViewController {
+        let contentView = AllCurrenciesContentView()
+        let viewModel = AllCurrenciesViewModel()
+        return AllCurrenciesViewController(contentView: contentView, viewModel: viewModel)
     }
 }

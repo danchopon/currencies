@@ -23,7 +23,7 @@ final class AllCurrenciesCoordinator: BaseCoordinator {
     }
     
     func showAllCurrencies() {
-        let vc = factory.makeAllCurrenciesVC()
+        let vc = factory.makeAllCurrenciesViewController()
         router.push(vc)
     }
 }
