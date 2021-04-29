@@ -27,3 +27,13 @@ class AllCurrenciesViewModel: BaseViewModel {
         }
     }
 }
+
+extension AllCurrenciesViewModel {
+    func numberOfRows() -> Int {
+        return resultItems.count
+    }
+    
+    func item(at index: Int) -> AllCurrencies.CurrencyDTO {
+        return resultItems[index]
+    }
+}
