@@ -13,7 +13,7 @@ enum AllCurrencies {
             case add
             case remove
             
-            var buttonTitle: String {
+            var title: String {
                 switch self {
                 case .add:
                     return "Add"
@@ -22,7 +22,7 @@ enum AllCurrencies {
                 }
             }
             
-            var buttonBackgroundColor: UIColor {
+            var backgroundColor: UIColor {
                 switch self {
                 case .add:
                     return UIColor.systemGreen
