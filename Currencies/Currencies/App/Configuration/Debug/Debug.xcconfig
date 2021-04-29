@@ -1,0 +1,15 @@
+//
+//  Config.xcconfig
+//  Currencies
+//
+//  Created by Daniyar Erkinov on 29/4/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_APP_NAME = CurrenciesDebug
+PRODUCT_BUNDLE_ID = com.currencies.debug
+PRODUCT_ICON_NAME = AppIconDebug
+PRODUCT_INFO_PLIST = Currencies/App/Configuration/Debug/Info.plist
+PRODUCT_BASE_API_URL = https:/$()/api.exchangerate.host

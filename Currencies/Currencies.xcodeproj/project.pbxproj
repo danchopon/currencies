@@ -8,22 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		EA4D4C7C263ACE51003DF7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4C7B263ACE51003DF7E4 /* AppDelegate.swift */; };
-		EA4D4C7E263ACE51003DF7E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4C7D263ACE51003DF7E4 /* SceneDelegate.swift */; };
-		EA4D4C80263ACE51003DF7E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4C7F263ACE51003DF7E4 /* ViewController.swift */; };
-		EA4D4C83263ACE51003DF7E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4D4C81263ACE51003DF7E4 /* Main.storyboard */; };
 		EA4D4C85263ACE52003DF7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4D4C84263ACE52003DF7E4 /* Assets.xcassets */; };
 		EA4D4C88263ACE52003DF7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4D4C86263ACE52003DF7E4 /* LaunchScreen.storyboard */; };
+		EA4D4C9E263AD08E003DF7E4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4C9D263AD08E003DF7E4 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA4D4C78263ACE51003DF7E4 /* Currencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4D4C7B263ACE51003DF7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA4D4C7D263ACE51003DF7E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA4D4C7F263ACE51003DF7E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA4D4C82263ACE51003DF7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA4D4C84263ACE52003DF7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA4D4C87263ACE52003DF7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA4D4C89263ACE52003DF7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4D4C97263ACFF3003DF7E4 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EA4D4C9A263AD04B003DF7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4D4C9B263AD064003DF7E4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		EA4D4C9D263AD08E003DF7E4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +55,104 @@
 		EA4D4C7A263ACE51003DF7E4 /* Currencies */ = {
 			isa = PBXGroup;
 			children = (
-				EA4D4C7B263ACE51003DF7E4 /* AppDelegate.swift */,
-				EA4D4C7D263ACE51003DF7E4 /* SceneDelegate.swift */,
-				EA4D4C7F263ACE51003DF7E4 /* ViewController.swift */,
-				EA4D4C81263ACE51003DF7E4 /* Main.storyboard */,
-				EA4D4C84263ACE52003DF7E4 /* Assets.xcassets */,
-				EA4D4C86263ACE52003DF7E4 /* LaunchScreen.storyboard */,
-				EA4D4C89263ACE52003DF7E4 /* Info.plist */,
+				EA4D4C8F263ACF22003DF7E4 /* App */,
+				EA4D4C90263ACF39003DF7E4 /* Services */,
+				EA4D4C91263ACF43003DF7E4 /* Factories */,
+				EA4D4C92263ACF49003DF7E4 /* Navigation */,
+				EA4D4C93263ACF4F003DF7E4 /* Common */,
+				EA4D4C94263ACF54003DF7E4 /* Models */,
+				EA4D4C95263ACF5A003DF7E4 /* Features */,
 			);
 			path = Currencies;
+			sourceTree = "<group>";
+		};
+		EA4D4C8F263ACF22003DF7E4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4C9C263AD079003DF7E4 /* Configuration */,
+				EA4D4C7B263ACE51003DF7E4 /* AppDelegate.swift */,
+				EA4D4C86263ACE52003DF7E4 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EA4D4C90263ACF39003DF7E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA4D4C91263ACF43003DF7E4 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		EA4D4C92263ACF49003DF7E4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EA4D4C93263ACF4F003DF7E4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4C96263ACF93003DF7E4 /* Resource */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EA4D4C94263ACF54003DF7E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA4D4C95263ACF5A003DF7E4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EA4D4C96263ACF93003DF7E4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4C84263ACE52003DF7E4 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EA4D4C98263AD01C003DF7E4 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4C89263ACE52003DF7E4 /* Info.plist */,
+				EA4D4C97263ACFF3003DF7E4 /* Debug.xcconfig */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		EA4D4C99263AD020003DF7E4 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4C9A263AD04B003DF7E4 /* Info.plist */,
+				EA4D4C9B263AD064003DF7E4 /* Release.xcconfig */,
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		EA4D4C9C263AD079003DF7E4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4C99263AD020003DF7E4 /* Release */,
+				EA4D4C98263AD01C003DF7E4 /* Debug */,
+				EA4D4C9D263AD08E003DF7E4 /* Environment.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +214,6 @@
 			files = (
 				EA4D4C88263ACE52003DF7E4 /* LaunchScreen.storyboard in Resources */,
 				EA4D4C85263ACE52003DF7E4 /* Assets.xcassets in Resources */,
-				EA4D4C83263ACE51003DF7E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4D4C80263ACE51003DF7E4 /* ViewController.swift in Sources */,
 				EA4D4C7C263ACE51003DF7E4 /* AppDelegate.swift in Sources */,
-				EA4D4C7E263ACE51003DF7E4 /* SceneDelegate.swift in Sources */,
+				EA4D4C9E263AD08E003DF7E4 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EA4D4C81263ACE51003DF7E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA4D4C82263ACE51003DF7E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA4D4C86263ACE52003DF7E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -167,6 +245,7 @@
 /* Begin XCBuildConfiguration section */
 		EA4D4C8A263ACE52003DF7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4D4C97263ACFF3003DF7E4 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -216,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -228,6 +307,7 @@
 		};
 		EA4D4C8B263ACE52003DF7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4D4C9B263AD064003DF7E4 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -271,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,17 +363,18 @@
 		};
 		EA4D4C8D263ACE52003DF7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4D4C97263ACFF3003DF7E4 /* Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(PRODUCT_ICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UG52XXUG9P;
-				INFOPLIST_FILE = Currencies/Info.plist;
+				INFOPLIST_FILE = "$(PRODUCT_INFO_PLIST)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danchopon.Currencies;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,17 +383,18 @@
 		};
 		EA4D4C8E263ACE52003DF7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4D4C9B263AD064003DF7E4 /* Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(PRODUCT_ICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UG52XXUG9P;
-				INFOPLIST_FILE = Currencies/Info.plist;
+				INFOPLIST_FILE = "$(PRODUCT_INFO_PLIST)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danchopon.Currencies;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
