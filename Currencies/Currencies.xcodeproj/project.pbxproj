@@ -20,6 +20,18 @@
 		EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CED263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift */; };
 		EA4D4CFE263ADAC6003DF7E4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CEE263ADAC6003DF7E4 /* NetworkError.swift */; };
 		EA4D4CFF263ADAC6003DF7E4 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4CEF263ADAC6003DF7E4 /* HTTPStatusCode.swift */; };
+		EA4D4D2F263ADD0D003DF7E4 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D18263ADD0D003DF7E4 /* Presentable.swift */; };
+		EA4D4D30263ADD0D003DF7E4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D19263ADD0D003DF7E4 /* Router.swift */; };
+		EA4D4D31263ADD0D003DF7E4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D1A263ADD0D003DF7E4 /* Coordinator.swift */; };
+		EA4D4D32263ADD0D003DF7E4 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D1B263ADD0D003DF7E4 /* CoordinatorFactory.swift */; };
+		EA4D4D33263ADD0D003DF7E4 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D1C263ADD0D003DF7E4 /* BaseCoordinator.swift */; };
+		EA4D4D34263ADD0D003DF7E4 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D1E263ADD0D003DF7E4 /* TabbarCoordinator.swift */; };
+		EA4D4D35263ADD0D003DF7E4 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D1F263ADD0D003DF7E4 /* TabbarView.swift */; };
+		EA4D4D36263ADD0D003DF7E4 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D20263ADD0D003DF7E4 /* TabbarController.swift */; };
+		EA4D4D39263ADD52003DF7E4 /* UITabBarItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D38263ADD52003DF7E4 /* UITabBarItem+Extensions.swift */; };
+		EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D3A263ADD76003DF7E4 /* Services.swift */; };
+		EA4D4D3E263ADFD9003DF7E4 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D3C263ADFD9003DF7E4 /* DeepLinkOption.swift */; };
+		EA4D4D3F263ADFD9003DF7E4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D3D263ADFD9003DF7E4 /* AppServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +54,18 @@
 		EA4D4CED263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extensions.swift"; sourceTree = "<group>"; };
 		EA4D4CEE263ADAC6003DF7E4 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		EA4D4CEF263ADAC6003DF7E4 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		EA4D4D18263ADD0D003DF7E4 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		EA4D4D19263ADD0D003DF7E4 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EA4D4D1A263ADD0D003DF7E4 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EA4D4D1B263ADD0D003DF7E4 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		EA4D4D1C263ADD0D003DF7E4 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		EA4D4D1E263ADD0D003DF7E4 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		EA4D4D1F263ADD0D003DF7E4 /* TabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		EA4D4D20263ADD0D003DF7E4 /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		EA4D4D38263ADD52003DF7E4 /* UITabBarItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extensions.swift"; sourceTree = "<group>"; };
+		EA4D4D3A263ADD76003DF7E4 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		EA4D4D3C263ADFD9003DF7E4 /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
+		EA4D4D3D263ADFD9003DF7E4 /* AppServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +158,10 @@
 		EA4D4C92263ACF49003DF7E4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D00263ADD0D003DF7E4 /* Coordinators */,
+				EA4D4D1D263ADD0D003DF7E4 /* MainTabbarFlow */,
+				EA4D4D15263ADD0D003DF7E4 /* Protocols */,
+				EA4D4D1C263ADD0D003DF7E4 /* BaseCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -141,6 +169,7 @@
 		EA4D4C93263ACF4F003DF7E4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D37263ADD3F003DF7E4 /* Extensions */,
 				EA4D4C96263ACF93003DF7E4 /* Resource */,
 			);
 			path = Common;
@@ -150,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				EA4D4CD6263ADA8C003DF7E4 /* Protocols */,
+				EA4D4D3D263ADFD9003DF7E4 /* AppServices.swift */,
+				EA4D4D3C263ADFD9003DF7E4 /* DeepLinkOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +231,7 @@
 		EA4D4CD6263ADA8C003DF7E4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				EA4D4D3A263ADD76003DF7E4 /* Services.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -233,6 +265,50 @@
 			children = (
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		EA4D4D00263ADD0D003DF7E4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EA4D4D15263ADD0D003DF7E4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D17263ADD0D003DF7E4 /* Core */,
+				EA4D4D1B263ADD0D003DF7E4 /* CoordinatorFactory.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EA4D4D17263ADD0D003DF7E4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D18263ADD0D003DF7E4 /* Presentable.swift */,
+				EA4D4D19263ADD0D003DF7E4 /* Router.swift */,
+				EA4D4D1A263ADD0D003DF7E4 /* Coordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA4D4D1D263ADD0D003DF7E4 /* MainTabbarFlow */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D1E263ADD0D003DF7E4 /* TabbarCoordinator.swift */,
+				EA4D4D1F263ADD0D003DF7E4 /* TabbarView.swift */,
+				EA4D4D20263ADD0D003DF7E4 /* TabbarController.swift */,
+			);
+			path = MainTabbarFlow;
+			sourceTree = "<group>";
+		};
+		EA4D4D37263ADD3F003DF7E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D4D38263ADD52003DF7E4 /* UITabBarItem+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,14 +425,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA4D4CFE263ADAC6003DF7E4 /* NetworkError.swift in Sources */,
+				EA4D4D36263ADD0D003DF7E4 /* TabbarController.swift in Sources */,
 				EA4D4CFD263ADAC6003DF7E4 /* HTTPURLResponse+Extensions.swift in Sources */,
 				EA4D4CFA263ADAC6003DF7E4 /* TargetType+Extensions.swift in Sources */,
+				EA4D4D35263ADD0D003DF7E4 /* TabbarView.swift in Sources */,
 				EA4D4CF1263ADAC6003DF7E4 /* CURError.swift in Sources */,
 				EA4D4CF0263ADAC6003DF7E4 /* NetworkActivityLogger.swift in Sources */,
+				EA4D4D31263ADD0D003DF7E4 /* Coordinator.swift in Sources */,
+				EA4D4D33263ADD0D003DF7E4 /* BaseCoordinator.swift in Sources */,
 				EA4D4CFF263ADAC6003DF7E4 /* HTTPStatusCode.swift in Sources */,
+				EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */,
+				EA4D4D30263ADD0D003DF7E4 /* Router.swift in Sources */,
+				EA4D4D3F263ADFD9003DF7E4 /* AppServices.swift in Sources */,
+				EA4D4D3E263ADFD9003DF7E4 /* DeepLinkOption.swift in Sources */,
 				EA4D4C7C263ACE51003DF7E4 /* AppDelegate.swift in Sources */,
+				EA4D4D2F263ADD0D003DF7E4 /* Presentable.swift in Sources */,
 				EA4D4CF8263ADAC6003DF7E4 /* NetworkManager.swift in Sources */,
+				EA4D4D32263ADD0D003DF7E4 /* CoordinatorFactory.swift in Sources */,
+				EA4D4D39263ADD52003DF7E4 /* UITabBarItem+Extensions.swift in Sources */,
 				EA4D4CF6263ADAC6003DF7E4 /* Decodable+Extensions.swift in Sources */,
+				EA4D4D34263ADD0D003DF7E4 /* TabbarCoordinator.swift in Sources */,
 				EA4D4C9E263AD08E003DF7E4 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
