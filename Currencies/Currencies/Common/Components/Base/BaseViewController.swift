@@ -22,6 +22,20 @@ class BaseViewController<ContentView: BaseContentView, ViewModel: BaseViewModel>
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setSubviews()
+        setConstraints()
+    }
+    
+    func setSubviews() {
+        view.addSubview(contentView)
+    }
+    
+    func setConstraints() {
+        contentView.fillSuperview()
+    }
 }
 
 extension BaseViewController: BaseViewModelDelegate {
