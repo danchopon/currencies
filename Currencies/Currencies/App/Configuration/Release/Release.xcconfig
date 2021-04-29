@@ -13,3 +13,7 @@ PRODUCT_BUNDLE_ID = com.currencies.release
 PRODUCT_ICON_NAME = AppIconRelease
 PRODUCT_INFO_PLIST = Currencies/App/Configuration/Release/Info.plist
 PRODUCT_BASE_API_URL = https:/$()/api.exchangerate.host
+
+// PODS
+#include "Pods/Target Support Files/Pods-Currencies/Pods-Currencies.release.xcconfig"
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
