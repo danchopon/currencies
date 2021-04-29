@@ -21,6 +21,9 @@ class TabbarCoordinator: BaseCoordinator {
     private func runAllCurrenciesFlow() -> ((UINavigationController) -> ()) {
         return { [unowned self] navController in
             if navController.viewControllers.isEmpty {
+                let coordinator = self.coordinatorFactory.makeAllCurrenciesCoordinator(navController: navController, services: services)
+                self.addDependency(coordinator)
+                coordinator.start()
             }
         }
     }
@@ -28,6 +31,9 @@ class TabbarCoordinator: BaseCoordinator {
     private func runMyCurrenciesFlow() -> ((UINavigationController) -> ()) {
         return { [unowned self] navController in
             if navController.viewControllers.isEmpty {
+                let coordinator = self.coordinatorFactory.makeMyCurrenciesCoordinator(navController: navController, services: services)
+                self.addDependency(coordinator)
+                coordinator.start()
             }
         }
     }
