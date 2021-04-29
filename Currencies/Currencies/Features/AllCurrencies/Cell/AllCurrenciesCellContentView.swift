@@ -46,7 +46,8 @@ extension AllCurrenciesCellContentView: BaseContentView {
             .top(actionButton.bottomAnchor, constant: 8),
             .leading(titleLabel.leadingAnchor),
             .trailing(actionButton.trailingAnchor),
-            .bottom(bottomAnchor)
+            .bottom(bottomAnchor),
+            .height(1)
         )
     }
 }
