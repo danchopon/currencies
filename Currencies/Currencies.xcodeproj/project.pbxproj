@@ -380,8 +380,8 @@
 		EA4D4D66263AEDA9003DF7E4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				EA4D4D7B263AF5CE003DF7E4 /* ActivityIndicator */,
 				EA4D4D67263AEDB3003DF7E4 /* Base */,
+				EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -395,14 +395,6 @@
 				EA4D4D74263AF32A003DF7E4 /* BaseViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		EA4D4D7B263AF5CE003DF7E4 /* ActivityIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				EA4D4D7C263AF5DD003DF7E4 /* ActivityIndicatorOverlayView.swift */,
-			);
-			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
