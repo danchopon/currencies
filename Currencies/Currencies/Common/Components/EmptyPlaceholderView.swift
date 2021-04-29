@@ -59,10 +59,17 @@ class EmptyPlaceholderView: UIView {
     lazy var emptyBoxImageView = makeEmptyBoxImageView()
     lazy var titleLabel = makeTitleLabel()
     
-    let preset: Preset
+    var preset: Preset? {
+        didSet {
+            guard let preset = preset else {
+                return
+            }
+            emptyBoxImageView.image = preset.image
+            titleLabel.attributedText = preset.attributedString
+        }
+    }
     
-    init(preset: Preset) {
-        self.preset = preset
+    init() {
         super.init(frame: .zero)
         setSubviews()
         setConstraints()
@@ -96,7 +103,6 @@ private extension EmptyPlaceholderView {
     func makeEmptyBoxImageView() -> UIImageView {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
-        view.image = preset.image
         return view
     }
     
@@ -104,7 +110,6 @@ private extension EmptyPlaceholderView {
         let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.attributedText = preset.attributedString
         return label
     }
 }
