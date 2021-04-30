@@ -23,7 +23,7 @@ final class AllCurrenciesVCFactory: AllCurrenciesFactory {
     
     func makeAllCurrenciesViewController() -> AllCurrenciesViewController {
         let contentView = AllCurrenciesContentView()
-        let viewModel = AllCurrenciesViewModel()
+        let viewModel = AllCurrenciesViewModel(services: services)
         return AllCurrenciesViewController(contentView: contentView, viewModel: viewModel)
     }
 }

@@ -19,6 +19,13 @@ class AllCurrenciesViewModel: BaseViewModel {
     
     weak var delegate: AllCurrenciesViewModelDelegate?
     
+    let services: Services
+    
+    init(services: Services) {
+        self.services = services
+        super.init()
+    }
+    
     private var searchMode: SearchMode = .normal {
         didSet {
             if searchMode == .search {
