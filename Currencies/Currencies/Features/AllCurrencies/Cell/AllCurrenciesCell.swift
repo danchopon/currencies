@@ -18,7 +18,7 @@ class AllCurrenciesCell: TableViewCell<AllCurrenciesCellContentView> {
     var indexPath: IndexPath?
     
     func configure(model: AllCurrencies.CurrencyDTO) {
-        mainContentView.titleLabel.text = model.currencyKey
+        mainContentView.keyTitleLabel.text = model.currencyKey
         
         mainContentView.actionButton.setTitle(model.buttonState.title, for: .normal)
         mainContentView.actionButton.backgroundColor = model.buttonState.backgroundColor

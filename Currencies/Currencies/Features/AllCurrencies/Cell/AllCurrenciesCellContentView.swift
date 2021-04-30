@@ -8,7 +8,7 @@
 import UIKit
 
 class AllCurrenciesCellContentView: UIView {
-    lazy var titleLabel = makeTitleLabel()
+    lazy var keyTitleLabel = makeKeyTitleLabel()
     lazy var actionButton = makeActionButton()
     lazy var separatorView = makeSeparatorView()
     
@@ -25,13 +25,13 @@ class AllCurrenciesCellContentView: UIView {
 
 extension AllCurrenciesCellContentView: BaseContentView {
     public func setSubviews() {
-        addSubview(titleLabel)
+        addSubview(keyTitleLabel)
         addSubview(actionButton)
         addSubview(separatorView)
     }
     
     public func setConstraints() {
-        titleLabel.anchor(
+        keyTitleLabel.anchor(
             .centerY(actionButton.centerYAnchor),
             .leading(leadingAnchor, constant: 16),
             .trailing(actionButton.leadingAnchor, constant: 8)
@@ -44,7 +44,7 @@ extension AllCurrenciesCellContentView: BaseContentView {
         )
         separatorView.anchor(
             .top(actionButton.bottomAnchor, constant: 8),
-            .leading(titleLabel.leadingAnchor),
+            .leading(keyTitleLabel.leadingAnchor),
             .trailing(actionButton.trailingAnchor),
             .bottom(bottomAnchor),
             .height(1)
@@ -53,7 +53,7 @@ extension AllCurrenciesCellContentView: BaseContentView {
 }
 
 private extension AllCurrenciesCellContentView {
-    func makeTitleLabel() -> UILabel {
+    func makeKeyTitleLabel() -> UILabel {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18)
         label.textColor = UIColor.black
