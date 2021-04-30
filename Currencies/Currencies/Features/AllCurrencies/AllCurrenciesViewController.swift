@@ -33,6 +33,8 @@ extension AllCurrenciesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = viewModel.item(at: indexPath.row)
         let cell: AllCurrenciesCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.indexPath = indexPath
+        cell.delegate = self
         cell.configure(model: item)
         return cell
     }
@@ -55,5 +57,15 @@ extension AllCurrenciesViewController: AllCurrenciesViewModelDelegate {
     
     func allCurrenciesViewModel(_ viewModel: AllCurrenciesViewModel, didFailWithError error: NetworkError) {
         print(error.localizedDescription)
+    }
+}
+
+extension AllCurrenciesViewController: AllCurrenciesCellDelegate {
+    func allCurrenciesCellDidTapAddButton(_ cell: AllCurrenciesCell, onIndexPath indexPath: IndexPath?) {
+        
+    }
+    
+    func allCurrenciesCellDidTapRemoveButton(_ cell: AllCurrenciesCell, onIndexPath indexPath: IndexPath?) {
+        
     }
 }
