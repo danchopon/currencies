@@ -21,6 +21,7 @@ class AllCurrenciesViewModel: BaseViewModel {
     weak var delegate: AllCurrenciesViewModelDelegate?
     
     let dataManager: CurrenciesDataManager
+    let services: Services
     
     private var searchMode: SearchMode = .normal {
         didSet {
@@ -47,6 +48,7 @@ class AllCurrenciesViewModel: BaseViewModel {
     }
     
     init(services: Services) {
+        self.services = services
         self.dataManager = CurrenciesDataManager(repositoryType: .remote(networkManager: services.networkManager))
         super.init()
     }
@@ -68,14 +70,23 @@ class AllCurrenciesViewModel: BaseViewModel {
     func addCurrency(at index: Int) {
         dataManager.setupRepository(type: .local)
         let item = item(at: index)
-        dataManager.add(item: item)
+        dataManager.add(item: item) { [weak self] in
+            self?.setupRemoteDataManagerRepository()
+        }
     }
     
     func removeCurrency(at index: Int) {
         dataManager.setupRepository(type: .local)
         let item = item(at: index)
-        dataManager.remove(item: item)
+        dataManager.remove(item: item) { [weak self] in
+            self?.setupRemoteDataManagerRepository()
+        }
     }
+    
+    func setupRemoteDataManagerRepository() {
+        dataManager.setupRepository(type: .remote(networkManager: services.networkManager))
+    }
+    
 }
 
 extension AllCurrenciesViewModel {

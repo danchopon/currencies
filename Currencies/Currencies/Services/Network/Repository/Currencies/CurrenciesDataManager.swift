@@ -48,17 +48,17 @@ class CurrenciesDataManager {
         })
     }
     
-    func remove(item: AllCurrencies.CurrencyDTO) {
+    func remove(item: AllCurrencies.CurrencyDTO, completion: (() -> Void)) {
         guard let repository = currenciesRepository as? CurrenciesLocalRepository else {
             return
         }
-        repository.remove(item: item)
+        repository.remove(item: item, completion: completion)
     }
     
-    func add(item: AllCurrencies.CurrencyDTO) {
+    func add(item: AllCurrencies.CurrencyDTO, completion: (() -> Void)) {
         guard let repository = currenciesRepository as? CurrenciesLocalRepository else {
             return
         }
-        repository.add(item: item)
+        repository.add(item: item, completion: completion)
     }
 }

@@ -12,11 +12,11 @@ final class CurrenciesLocalRepository: CurrenciesRepository {
         completion(.failure(.requestMapping("")))
     }
     
-    func remove(item: AllCurrencies.CurrencyDTO) {
+    func remove(item: AllCurrencies.CurrencyDTO, completion: (() -> Void)) {
         print(item)
     }
     
-    func add(item: AllCurrencies.CurrencyDTO) {
+    func add(item: AllCurrencies.CurrencyDTO, completion: (() -> Void)) {
         print(item)
     }
 }
