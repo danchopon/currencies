@@ -8,8 +8,8 @@
 import Foundation
 
 protocol AllCurrenciesCellDelegate: AnyObject {
-    func allCurrenciesCellDidTapAddButton(_ cell: AllCurrenciesCell, onIndexPath indexPath: IndexPath?)
-    func allCurrenciesCellDidTapRemoveButton(_ cell: AllCurrenciesCell, onIndexPath indexPath: IndexPath?)
+    func allCurrenciesCellDidTapAddButton(_ cell: AllCurrenciesCell, atIndexPath indexPath: IndexPath?)
+    func allCurrenciesCellDidTapRemoveButton(_ cell: AllCurrenciesCell, atIndexPath indexPath: IndexPath?)
 }
 
 class AllCurrenciesCell: TableViewCell<AllCurrenciesCellContentView> {
@@ -34,10 +34,10 @@ class AllCurrenciesCell: TableViewCell<AllCurrenciesCellContentView> {
 
 @objc private extension AllCurrenciesCell {
     func didTapAddButton() {
-        delegate?.allCurrenciesCellDidTapAddButton(self, onIndexPath: indexPath)
+        delegate?.allCurrenciesCellDidTapAddButton(self, atIndexPath: indexPath)
     }
     
     func didTapRemoveButton() {
-        delegate?.allCurrenciesCellDidTapRemoveButton(self, onIndexPath: indexPath)
+        delegate?.allCurrenciesCellDidTapRemoveButton(self, atIndexPath: indexPath)
     }
 }

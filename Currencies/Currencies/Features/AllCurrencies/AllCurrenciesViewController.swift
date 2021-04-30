@@ -61,11 +61,11 @@ extension AllCurrenciesViewController: AllCurrenciesViewModelDelegate {
 }
 
 extension AllCurrenciesViewController: AllCurrenciesCellDelegate {
-    func allCurrenciesCellDidTapAddButton(_ cell: AllCurrenciesCell, onIndexPath indexPath: IndexPath?) {
+    func allCurrenciesCellDidTapAddButton(_ cell: AllCurrenciesCell, atIndexPath indexPath: IndexPath?) {
         
     }
     
-    func allCurrenciesCellDidTapRemoveButton(_ cell: AllCurrenciesCell, onIndexPath indexPath: IndexPath?) {
+    func allCurrenciesCellDidTapRemoveButton(_ cell: AllCurrenciesCell, atIndexPath indexPath: IndexPath?) {
         
     }
 }
