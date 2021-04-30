@@ -20,8 +20,8 @@ class AllCurrenciesViewModel: BaseViewModel {
     
     weak var delegate: AllCurrenciesViewModelDelegate?
     
-    let dataManager: CurrenciesDataManager
-    let services: Services
+    private let dataManager: CurrenciesDataManager
+    private let services: Services
     
     private var searchMode: SearchMode = .normal {
         didSet {
@@ -83,7 +83,7 @@ class AllCurrenciesViewModel: BaseViewModel {
         }
     }
     
-    func setupRemoteDataManagerRepository() {
+    private func setupRemoteDataManagerRepository() {
         dataManager.setupRepository(type: .remote(networkManager: services.networkManager))
     }
     
