@@ -62,6 +62,7 @@
 		EA4D4D9B263B0A90003DF7E4 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D9A263B0A90003DF7E4 /* TableView.swift */; };
 		EAB1A3B0263C6B4D00364912 /* CurrenciesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3AF263C6B4D00364912 /* CurrenciesAPI.swift */; };
 		EAB1A3B5263C6BE600364912 /* CurrenciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3B4263C6BE600364912 /* CurrenciesRepository.swift */; };
+		EAB1A3B9263C6CA600364912 /* CurrenciesRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3B8263C6CA600364912 /* CurrenciesRemoteRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		EA4D4D9A263B0A90003DF7E4 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		EAB1A3AF263C6B4D00364912 /* CurrenciesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesAPI.swift; sourceTree = "<group>"; };
 		EAB1A3B4263C6BE600364912 /* CurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRepository.swift; sourceTree = "<group>"; };
+		EAB1A3B8263C6CA600364912 /* CurrenciesRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRemoteRepository.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -461,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				EAB1A3B4263C6BE600364912 /* CurrenciesRepository.swift */,
+				EAB1A3B8263C6CA600364912 /* CurrenciesRemoteRepository.swift */,
 			);
 			path = Currencies;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				EAB1A3B0263C6B4D00364912 /* CurrenciesAPI.swift in Sources */,
 				EA4D4CF1263ADAC6003DF7E4 /* CURError.swift in Sources */,
 				EA4D4CF0263ADAC6003DF7E4 /* NetworkActivityLogger.swift in Sources */,
+				EAB1A3B9263C6CA600364912 /* CurrenciesRemoteRepository.swift in Sources */,
 				EA4D4D31263ADD0D003DF7E4 /* Coordinator.swift in Sources */,
 				EA4D4D6E263AF1B9003DF7E4 /* ViewModelable.swift in Sources */,
 				EA4D4D4A263AE5F3003DF7E4 /* MyCurrenciesVCFactory.swift in Sources */,
