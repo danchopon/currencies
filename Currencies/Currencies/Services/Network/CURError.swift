@@ -1,6 +1,8 @@
 import Foundation
 
-public enum CURError: Error {}
+public enum CURError: Error {
+    case emptyData
+}
 
 extension CURError {
     static func debugPrintDecodingError(_ error: DecodingError, model: Decodable.Type) {

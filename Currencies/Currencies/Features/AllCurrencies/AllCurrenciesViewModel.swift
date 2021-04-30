@@ -9,6 +9,7 @@ import Foundation
 
 protocol AllCurrenciesViewModelDelegate: AnyObject {
     func allCurrenciesViewModelDidUpdateItems(_ viewModel: AllCurrenciesViewModel)
+    func allCurrenciesViewModel(_ viewModel: AllCurrenciesViewModel, didFailWithError error: NetworkError)
 }
 
 class AllCurrenciesViewModel: BaseViewModel {
@@ -19,7 +20,7 @@ class AllCurrenciesViewModel: BaseViewModel {
     
     weak var delegate: AllCurrenciesViewModelDelegate?
     
-    let services: Services
+    let dataManager: CurrenciesDataManager<CurrenciesRemoteRepository>
     
     private var searchMode: SearchMode = .normal {
         didSet {
@@ -45,8 +46,22 @@ class AllCurrenciesViewModel: BaseViewModel {
         }
     }
     
+    func getCurrencies() {
+        startIndicator()
+        dataManager.getCurrencies { [weak self] result in
+            self?.stopIndicator()
+            guard let self = self else { return }
+            switch result {
+            case .success(let response):
+                self.items = response
+            case .failure(let error):
+                self.delegate?.allCurrenciesViewModel(self, didFailWithError: error)
+            }
+        }
+    }
+    
     init(services: Services) {
-        self.services = services
+        self.dataManager = CurrenciesDataManager(repositoryType: .remote(networkManager: services.networkManager))
         super.init()
     }
 }

@@ -34,7 +34,7 @@ private extension AppDelegate {
 
         let appServices = AppServices(
             instructor: instructor,
-            repository: ()
+            networkManager: networkManager
         )
         return AppCoordinator(
             router: router,

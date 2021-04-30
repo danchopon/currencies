@@ -63,6 +63,8 @@
 		EAB1A3B0263C6B4D00364912 /* CurrenciesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3AF263C6B4D00364912 /* CurrenciesAPI.swift */; };
 		EAB1A3B5263C6BE600364912 /* CurrenciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3B4263C6BE600364912 /* CurrenciesRepository.swift */; };
 		EAB1A3B9263C6CA600364912 /* CurrenciesRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3B8263C6CA600364912 /* CurrenciesRemoteRepository.swift */; };
+		EAB1A3BD263C70F600364912 /* CurrenciesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3BC263C70F600364912 /* CurrenciesDataManager.swift */; };
+		EAB1A3BF263C764200364912 /* CurrenciesLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3BE263C764200364912 /* CurrenciesLocalRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +130,8 @@
 		EAB1A3AF263C6B4D00364912 /* CurrenciesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesAPI.swift; sourceTree = "<group>"; };
 		EAB1A3B4263C6BE600364912 /* CurrenciesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRepository.swift; sourceTree = "<group>"; };
 		EAB1A3B8263C6CA600364912 /* CurrenciesRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesRemoteRepository.swift; sourceTree = "<group>"; };
+		EAB1A3BC263C70F600364912 /* CurrenciesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesDataManager.swift; sourceTree = "<group>"; };
+		EAB1A3BE263C764200364912 /* CurrenciesLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesLocalRepository.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -464,6 +468,8 @@
 			children = (
 				EAB1A3B4263C6BE600364912 /* CurrenciesRepository.swift */,
 				EAB1A3B8263C6CA600364912 /* CurrenciesRemoteRepository.swift */,
+				EAB1A3BC263C70F600364912 /* CurrenciesDataManager.swift */,
+				EAB1A3BE263C764200364912 /* CurrenciesLocalRepository.swift */,
 			);
 			path = Currencies;
 			sourceTree = "<group>";
@@ -599,6 +605,7 @@
 				EAB1A3B9263C6CA600364912 /* CurrenciesRemoteRepository.swift in Sources */,
 				EA4D4D31263ADD0D003DF7E4 /* Coordinator.swift in Sources */,
 				EA4D4D6E263AF1B9003DF7E4 /* ViewModelable.swift in Sources */,
+				EAB1A3BF263C764200364912 /* CurrenciesLocalRepository.swift in Sources */,
 				EA4D4D4A263AE5F3003DF7E4 /* MyCurrenciesVCFactory.swift in Sources */,
 				EA4D4D5B263AEB2C003DF7E4 /* AppCoordinatorFactory.swift in Sources */,
 				EA4D4D33263ADD0D003DF7E4 /* BaseCoordinator.swift in Sources */,
@@ -613,6 +620,7 @@
 				EA4D4D8D263AFCAC003DF7E4 /* AllCurrenciesEnum.swift in Sources */,
 				EA4D4D3B263ADD76003DF7E4 /* Services.swift in Sources */,
 				EA4D4D69263AEDB8003DF7E4 /* BaseNavigationController.swift in Sources */,
+				EAB1A3BD263C70F600364912 /* CurrenciesDataManager.swift in Sources */,
 				EA4D4D30263ADD0D003DF7E4 /* Router.swift in Sources */,
 				EA4D4D75263AF32A003DF7E4 /* BaseViewController.swift in Sources */,
 				EA4D4D9B263B0A90003DF7E4 /* TableView.swift in Sources */,

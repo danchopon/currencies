@@ -10,12 +10,18 @@ import UIKit
 class AllCurrenciesViewController: BaseViewController<AllCurrenciesContentView, AllCurrenciesViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         setupTableView()
+        getData()
     }
     
     private func setupTableView() {
         contentView.tableView.dataSource = self
         contentView.tableView.delegate = self
+    }
+    
+    private func getData() {
+        viewModel.getCurrencies()
     }
 }
 
@@ -39,5 +45,15 @@ extension AllCurrenciesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
+    }
+}
+
+extension AllCurrenciesViewController: AllCurrenciesViewModelDelegate {
+    func allCurrenciesViewModelDidUpdateItems(_ viewModel: AllCurrenciesViewModel) {
+        contentView.tableView.reloadData()
+    }
+    
+    func allCurrenciesViewModel(_ viewModel: AllCurrenciesViewModel, didFailWithError error: NetworkError) {
+        print(error.localizedDescription)
     }
 }
