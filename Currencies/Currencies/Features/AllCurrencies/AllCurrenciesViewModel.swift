@@ -7,23 +7,39 @@
 
 import Foundation
 
+protocol AllCurrenciesViewModelDelegate: AnyObject {
+    func allCurrenciesViewModelDidUpdateItems(_ viewModel: AllCurrenciesViewModel)
+}
+
 class AllCurrenciesViewModel: BaseViewModel {
     enum SearchMode {
         case normal
         case search
     }
     
-    private var searchMode: SearchMode = .normal
+    weak var delegate: AllCurrenciesViewModelDelegate?
     
-    private var items: [AllCurrencies.CurrencyDTO] = []
-    private var searchItems: [AllCurrencies.CurrencyDTO] = []
+    private var searchMode: SearchMode = .normal {
+        didSet {
+            if searchMode == .search {
+                filteredItems = items
+            }
+        }
+    }
+    
+    private var items: [AllCurrencies.CurrencyDTO] = [] {
+        didSet {
+            delegate?.allCurrenciesViewModelDidUpdateItems(self)
+        }
+    }
+    private var filteredItems: [AllCurrencies.CurrencyDTO] = []
     
     var resultItems: [AllCurrencies.CurrencyDTO] {
         switch searchMode {
         case .normal:
             return items
         case .search:
-            return searchItems
+            return filteredItems
         }
     }
 }
@@ -35,5 +51,22 @@ extension AllCurrenciesViewModel {
     
     func item(at index: Int) -> AllCurrencies.CurrencyDTO {
         return resultItems[index]
+    }
+}
+
+extension AllCurrenciesViewModel {
+    func startSearch() {
+        searchMode = .search
+    }
+    
+    func finishSearch() {
+        searchMode = .normal
+    }
+    
+    func search(text: String, completion: (() -> Void)) {
+        filteredItems = text.isEmpty ? items : items.filter { (item) -> Bool in
+            return item.title.lowercased().range(of: text.lowercased(), range: nil, locale: nil) != nil
+        }
+        completion()
     }
 }
