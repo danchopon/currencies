@@ -20,7 +20,7 @@ class AllCurrenciesViewModel: BaseViewModel {
     
     weak var delegate: AllCurrenciesViewModelDelegate?
     
-    let dataManager: CurrenciesDataManager<CurrenciesRemoteRepository>
+    let dataManager: CurrenciesDataManager
     
     private var searchMode: SearchMode = .normal {
         didSet {
@@ -66,11 +66,15 @@ class AllCurrenciesViewModel: BaseViewModel {
     }
     
     func addCurrency(at index: Int) {
-        
+        dataManager.setupRepository(type: .local)
+        let item = item(at: index)
+        dataManager.add(item: item)
     }
     
     func removeCurrency(at index: Int) {
-        
+        dataManager.setupRepository(type: .local)
+        let item = item(at: index)
+        dataManager.remove(item: item)
     }
 }
 

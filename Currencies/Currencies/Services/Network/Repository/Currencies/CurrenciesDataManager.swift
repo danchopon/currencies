@@ -7,25 +7,34 @@
 
 import Foundation
 
-class CurrenciesDataManager<T: CurrenciesRepository> {
+class CurrenciesDataManager {
     enum RepositoryType {
         case local
         case remote(networkManager: NetworkManager)
     }
     
-    let currenciesRepository: T
+    var currenciesRepository: CurrenciesRepository?
     
     init(repositoryType: RepositoryType) {
         switch repositoryType {
         case .local:
-            self.currenciesRepository = CurrenciesLocalRepository() as! T
+            self.currenciesRepository = CurrenciesLocalRepository()
         case .remote(let networkManager):
-            self.currenciesRepository = CurrenciesRemoteRepository(networkManager: networkManager) as! T
+            self.currenciesRepository = CurrenciesRemoteRepository(networkManager: networkManager)
         }
     }
     
-    func getCurrencies(completion: @escaping (Result<[AllCurrencies.CurrencyDTO], T.SomeError>) -> Void) {
-        currenciesRepository.getCurrencies(completion: { result in
+    func setupRepository(type: RepositoryType) {
+        switch type {
+        case .local:
+            self.currenciesRepository = CurrenciesLocalRepository()
+        case .remote(let networkManager):
+            self.currenciesRepository = CurrenciesRemoteRepository(networkManager: networkManager)
+        }
+    }
+    
+    func getCurrencies(completion: @escaping (Result<[AllCurrencies.CurrencyDTO], NetworkError>) -> Void) {
+        currenciesRepository?.getCurrencies(completion: { result in
             switch result {
             case .success(let response):
                 var dto = [AllCurrencies.CurrencyDTO]()
@@ -37,5 +46,19 @@ class CurrenciesDataManager<T: CurrenciesRepository> {
                 completion(.failure(error))
             }
         })
+    }
+    
+    func remove(item: AllCurrencies.CurrencyDTO) {
+        guard let repository = currenciesRepository as? CurrenciesLocalRepository else {
+            return
+        }
+        repository.remove(item: item)
+    }
+    
+    func add(item: AllCurrencies.CurrencyDTO) {
+        guard let repository = currenciesRepository as? CurrenciesLocalRepository else {
+            return
+        }
+        repository.add(item: item)
     }
 }

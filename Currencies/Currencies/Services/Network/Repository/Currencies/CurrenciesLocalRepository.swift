@@ -8,9 +8,15 @@
 import Foundation
 
 final class CurrenciesLocalRepository: CurrenciesRepository {
-    typealias SomeError = CURError
-    
     func getCurrencies(completion: @escaping CurrenciesResponse) {
-        completion(.failure(.emptyData))
+        completion(.failure(.requestMapping("")))
+    }
+    
+    func remove(item: AllCurrencies.CurrencyDTO) {
+        print(item)
+    }
+    
+    func add(item: AllCurrencies.CurrencyDTO) {
+        print(item)
     }
 }
