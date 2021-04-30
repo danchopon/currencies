@@ -21,11 +21,6 @@ class AllCurrenciesViewModel: BaseViewModel {
     
     let services: Services
     
-    init(services: Services) {
-        self.services = services
-        super.init()
-    }
-    
     private var searchMode: SearchMode = .normal {
         didSet {
             if searchMode == .search {
@@ -48,6 +43,11 @@ class AllCurrenciesViewModel: BaseViewModel {
         case .search:
             return filteredItems
         }
+    }
+    
+    init(services: Services) {
+        self.services = services
+        super.init()
     }
 }
 
