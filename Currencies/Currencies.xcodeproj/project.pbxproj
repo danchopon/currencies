@@ -60,6 +60,7 @@
 		EA4D4D95263B01F2003DF7E4 /* EmptyPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D94263B01F2003DF7E4 /* EmptyPlaceholderView.swift */; };
 		EA4D4D99263B0A70003DF7E4 /* RefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D98263B0A70003DF7E4 /* RefreshControl.swift */; };
 		EA4D4D9B263B0A90003DF7E4 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D4D9A263B0A90003DF7E4 /* TableView.swift */; };
+		EAB1A3B0263C6B4D00364912 /* CurrenciesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB1A3AF263C6B4D00364912 /* CurrenciesAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		EA4D4D94263B01F2003DF7E4 /* EmptyPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPlaceholderView.swift; sourceTree = "<group>"; };
 		EA4D4D98263B0A70003DF7E4 /* RefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControl.swift; sourceTree = "<group>"; };
 		EA4D4D9A263B0A90003DF7E4 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		EAB1A3AF263C6B4D00364912 /* CurrenciesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesAPI.swift; sourceTree = "<group>"; };
 		EB75F662818F678A7336EF21 /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -331,6 +333,7 @@
 		EA4D4CEA263ADAC6003DF7E4 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EAB1A3AF263C6B4D00364912 /* CurrenciesAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				EA4D4D99263B0A70003DF7E4 /* RefreshControl.swift in Sources */,
 				EA4D4CFA263ADAC6003DF7E4 /* TargetType+Extensions.swift in Sources */,
 				EA4D4D35263ADD0D003DF7E4 /* TabbarView.swift in Sources */,
+				EAB1A3B0263C6B4D00364912 /* CurrenciesAPI.swift in Sources */,
 				EA4D4CF1263ADAC6003DF7E4 /* CURError.swift in Sources */,
 				EA4D4CF0263ADAC6003DF7E4 /* NetworkActivityLogger.swift in Sources */,
 				EA4D4D31263ADD0D003DF7E4 /* Coordinator.swift in Sources */,
