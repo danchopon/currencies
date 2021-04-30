@@ -35,4 +35,10 @@ enum AllCurrencies {
         let title: String
         let buttonState: ButtonState
     }
+    
+    struct Response: Decodable {
+        let base: String
+        let date: String
+        let rates: [String: Double]
+    }
 }
