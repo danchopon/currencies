@@ -46,6 +46,11 @@ class AllCurrenciesViewModel: BaseViewModel {
         }
     }
     
+    init(services: Services) {
+        self.dataManager = CurrenciesDataManager(repositoryType: .remote(networkManager: services.networkManager))
+        super.init()
+    }
+    
     func getCurrencies() {
         startIndicator()
         dataManager.getCurrencies { [weak self] result in
@@ -58,11 +63,6 @@ class AllCurrenciesViewModel: BaseViewModel {
                 self.delegate?.allCurrenciesViewModel(self, didFailWithError: error)
             }
         }
-    }
-    
-    init(services: Services) {
-        self.dataManager = CurrenciesDataManager(repositoryType: .remote(networkManager: services.networkManager))
-        super.init()
     }
 }
 
