@@ -32,7 +32,8 @@ enum AllCurrencies {
             }
         }
         
-        let title: String
+        let currencyKey: String
+        let value: Double
         let buttonState: ButtonState
     }
     

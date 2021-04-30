@@ -99,7 +99,7 @@ extension AllCurrenciesViewModel {
     
     func search(text: String, completion: (() -> Void)) {
         filteredItems = text.isEmpty ? items : items.filter { (item) -> Bool in
-            return item.title.lowercased().range(of: text.lowercased(), range: nil, locale: nil) != nil
+            return item.currencyKey.lowercased().range(of: text.lowercased(), range: nil, locale: nil) != nil
         }
         completion()
     }

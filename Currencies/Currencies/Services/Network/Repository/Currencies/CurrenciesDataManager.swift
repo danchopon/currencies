@@ -39,7 +39,7 @@ class CurrenciesDataManager {
             case .success(let response):
                 var dto = [AllCurrencies.CurrencyDTO]()
                 for (key, value) in response.rates {
-                    dto.append(AllCurrencies.CurrencyDTO(title: "\(key)-\(value)", buttonState: .add))
+                    dto.append(AllCurrencies.CurrencyDTO(currencyKey: key, value: value, buttonState: .add))
                 }
                 completion(.success(dto))
             case .failure(let error):
