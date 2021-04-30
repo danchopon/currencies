@@ -64,6 +64,14 @@ class AllCurrenciesViewModel: BaseViewModel {
             }
         }
     }
+    
+    func addCurrency(at index: Int) {
+        
+    }
+    
+    func removeCurrency(at index: Int) {
+        
+    }
 }
 
 extension AllCurrenciesViewModel {
