@@ -19,7 +19,7 @@ class AllCurrenciesCell: TableViewCell<AllCurrenciesCellContentView> {
     
     func configure(model: AllCurrencies.CurrencyDTO) {
         mainContentView.keyTitleLabel.text = model.currencyKey
-        
+        mainContentView.valueLabel.text = model.valueDTO
         mainContentView.actionButton.setTitle(model.buttonState.title, for: .normal)
         mainContentView.actionButton.backgroundColor = model.buttonState.backgroundColor
         
