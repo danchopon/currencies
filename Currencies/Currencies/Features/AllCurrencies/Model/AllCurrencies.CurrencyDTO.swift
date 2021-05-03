@@ -1,14 +1,14 @@
 //
-//  AllCurrenciesEnum.swift
+//  AllCurrencies.CurrencyDTO.swift
 //  Currencies
 //
-//  Created by Daniyar Erkinov on 29/4/21.
+//  Created by Daniyar Erkinov on 3/5/21.
 //
 
 import UIKit
 
-enum AllCurrencies {
-    struct CurrencyDTO {
+extension AllCurrencies {
+    class CurrencyDTO {
         enum ButtonState {
             case add
             case remove
@@ -32,18 +32,16 @@ enum AllCurrencies {
             }
         }
         
-        let currencyKey: String
-        let value: Double
+        let currency: Currency
         let buttonState: ButtonState
         
-        var valueDTO: String {
-            return "\(value)"
+        init(currency: Currency, buttonState: ButtonState) {
+            self.currency = currency
+            self.buttonState = buttonState
         }
-    }
-    
-    struct Response: Decodable {
-        let base: String
-        let date: String
-        let rates: [String: Double]
+        
+        var valueDTO: String {
+            return "\(currency.value)"
+        }
     }
 }

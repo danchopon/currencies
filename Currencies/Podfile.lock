@@ -1,22 +1,26 @@
 PODS:
   - Alamofire (5.4.1)
+  - CoreStore (8.0.1)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
 
 DEPENDENCIES:
+  - CoreStore (~> 8.0)
   - Moya (~> 14.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CoreStore
     - Moya
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  CoreStore: b8ed5be7d39af83a235878e4c8555134591badf4
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
 
-PODFILE CHECKSUM: ff0a86780a824bff8d47652b977ad227fc74d4c6
+PODFILE CHECKSUM: 8d999ecaddda05e860cacca417bc2c5256d8d547
 
 COCOAPODS: 1.10.1

@@ -18,6 +18,17 @@ final class CurrenciesRemoteRepository: CurrenciesRepository {
     
     func getCurrencies(completion: @escaping CurrenciesResponse) {
         let target = CurrenciesAPI.latest
-        networkManager.request(MultiTarget(target), for: AllCurrencies.Response.self, completion: completion)
+        networkManager.request(MultiTarget(target), for: AllCurrencies.Response.self) { result in
+            switch result {
+            case .success(let response):
+                var currencies = [AllCurrencies.Currency]()
+                for (key, value) in response.rates {
+                    currencies.append(AllCurrencies.Currency(key: key, value: value))
+                }
+                completion(.success(currencies))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 }

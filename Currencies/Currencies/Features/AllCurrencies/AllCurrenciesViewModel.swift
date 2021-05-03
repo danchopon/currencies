@@ -70,23 +70,29 @@ class AllCurrenciesViewModel: BaseViewModel {
     func addCurrency(at index: Int) {
         dataManager.setupRepository(type: .local)
         let item = item(at: index)
-        dataManager.add(item: item) { [weak self] in
+        dataManager.add(item: item) { [weak self] error in
             self?.setupRemoteDataManagerRepository()
+            self?.handle(error: error)
         }
     }
     
     func removeCurrency(at index: Int) {
         dataManager.setupRepository(type: .local)
         let item = item(at: index)
-        dataManager.remove(item: item) { [weak self] in
+        dataManager.remove(item: item) { [weak self] error in
             self?.setupRemoteDataManagerRepository()
+            self?.handle(error: error)
         }
+    }
+    
+    private func handle(error: NetworkError?) {
+        guard let error = error else { return }
+        delegate?.allCurrenciesViewModel(self, didFailWithError: error)
     }
     
     private func setupRemoteDataManagerRepository() {
         dataManager.setupRepository(type: .remote(networkManager: services.networkManager))
     }
-    
 }
 
 extension AllCurrenciesViewModel {
@@ -110,7 +116,7 @@ extension AllCurrenciesViewModel {
     
     func search(text: String, completion: (() -> Void)) {
         filteredItems = text.isEmpty ? items : items.filter { (item) -> Bool in
-            return item.currencyKey.lowercased().range(of: text.lowercased(), range: nil, locale: nil) != nil
+            return item.currency.key.lowercased().range(of: text.lowercased(), range: nil, locale: nil) != nil
         }
         completion()
     }

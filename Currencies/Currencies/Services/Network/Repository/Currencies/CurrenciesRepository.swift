@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CurrenciesRepository {
-    typealias CurrenciesResponse = ((Result<AllCurrencies.Response, NetworkError>) -> Void)
+    typealias CurrenciesResponse = ((Result<[AllCurrencies.Currency], NetworkError>) -> Void)
     
     func getCurrencies(completion: @escaping CurrenciesResponse)
 }

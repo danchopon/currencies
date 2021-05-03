@@ -36,11 +36,8 @@ class CurrenciesDataManager {
     func getCurrencies(completion: @escaping (Result<[AllCurrencies.CurrencyDTO], NetworkError>) -> Void) {
         currenciesRepository?.getCurrencies(completion: { result in
             switch result {
-            case .success(let response):
-                var dto = [AllCurrencies.CurrencyDTO]()
-                for (key, value) in response.rates {
-                    dto.append(AllCurrencies.CurrencyDTO(currencyKey: key, value: value, buttonState: .add))
-                }
+            case .success(let currencies):
+                let dto = currencies.map { AllCurrencies.CurrencyDTO(currency: $0, buttonState: .add) }
                 completion(.success(dto))
             case .failure(let error):
                 completion(.failure(error))
@@ -48,17 +45,23 @@ class CurrenciesDataManager {
         })
     }
     
-    func remove(item: AllCurrencies.CurrencyDTO, completion: (() -> Void)) {
+    func remove(item: AllCurrencies.CurrencyDTO, completion: @escaping ((NetworkError?) -> Void)) {
         guard let repository = currenciesRepository as? CurrenciesLocalRepository else {
             return
         }
-        repository.remove(item: item, completion: completion)
+        repository.remove(item: item) { error in
+            guard let error = error else { return }
+            completion(.requestMapping(error.localizedDescription))
+        }
     }
     
-    func add(item: AllCurrencies.CurrencyDTO, completion: (() -> Void)) {
+    func add(item: AllCurrencies.CurrencyDTO, completion: @escaping ((NetworkError?) -> Void)) {
         guard let repository = currenciesRepository as? CurrenciesLocalRepository else {
             return
         }
-        repository.add(item: item, completion: completion)
+        repository.add(item: item) { error in
+            guard let error = error else { return }
+            completion(.requestMapping(error.localizedDescription))
+        }
     }
 }
