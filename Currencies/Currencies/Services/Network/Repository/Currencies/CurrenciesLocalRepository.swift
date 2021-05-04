@@ -16,10 +16,21 @@ final class CurrenciesLocalRepository: CurrenciesRepository {
         localService.fetchAll { result in
             switch result {
             case .success(let currencies):
-                let mappedCurrencies = currencies.map { AllCurrencies.Currency(key: $0.currencyKey, value: $0.value) }
-                completion(.success(mappedCurrencies))
+//                let mappedCurrencies = currencies.map {
+//                    AllCurrencies.Currency(key: $0.$currencyKey, value: $0.$value)
+//                }
+//                completion(.success(mappedCurrencies))
+//                currencies.forEach {
+//                }
+//                currencies.
+                currencies.forEach {
+                    print($0.cs_toRaw().getValue(forKvcKey: "currencyKey"))
+                    
+                }
+                
+            break
             case .failure(let error):
-                print(error)
+                completion(.failure(.requestMapping(error.localizedDescription)))
             }
         }
     }

@@ -55,14 +55,17 @@ class AllCurrenciesViewModel: BaseViewModel {
     
     func getCurrencies() {
         startIndicator()
+        dataManager.setupRepository(type: .local)
         dataManager.getCurrencies { [weak self] result in
-            self?.stopIndicator()
-            guard let self = self else { return }
-            switch result {
-            case .success(let response):
-                self.items = response
-            case .failure(let error):
-                self.delegate?.allCurrenciesViewModel(self, didFailWithError: error)
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                self.stopIndicator()
+                switch result {
+                case .success(let response):
+                    self.items = response
+                case .failure(let error):
+                    self.delegate?.allCurrenciesViewModel(self, didFailWithError: error)
+                }
             }
         }
     }

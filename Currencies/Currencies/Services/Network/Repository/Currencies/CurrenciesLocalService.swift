@@ -21,13 +21,6 @@ final class CurrenciesLocalService {
             )
         )
         
-        try! CurrenciesLocalService.dataStack.addStorageAndWait(
-            SQLiteStore(
-                fileName: "StoreCurrency.sqlite",
-                localStorageOptions: .recreateStoreOnModelMismatch
-            )
-        )
-        
         return dataStack
     }()
     
@@ -46,10 +39,6 @@ final class CurrenciesLocalService {
     
     func remove(currencyKey: String, completion: @escaping ((Error?) -> Void)) {
         CurrenciesLocalService.dataStack.perform { transaction in
-//            transaction.delete(currency)
-//            transaction.delete(objectIDs: <#T##Sequence#>)
-//            let asdf = NSManagedObjectID()
-//            CurrenciesLocalService.dataStack.fetchone
             try transaction.deleteAll(
                 From<AllCurrencies.StoreCurrency>(),
                 Where<AllCurrencies.StoreCurrency>("%K = %@", "currencyKey", currencyKey)

@@ -9,30 +9,20 @@ import Foundation
 import CoreStore
 
 extension AllCurrencies {
-    class StoreCurrency: CoreStoreObject, ImportableUniqueObject {
+    class StoreCurrency: CoreStoreObject {
         @Field.Stored("currencyKey")
         var currencyKey: String = ""
         
         @Field.Stored("value")
         var value: Double = 0.0
-        
-        // MARK: ImportableObject
-        
-        typealias ImportSource = AllCurrencies.Currency
-        
-        // MARK: ImportableUniqueObject
-        
-        typealias UniqueIDType = String
-        
-        static var uniqueIDKeyPath: String = String(keyPath: \AllCurrencies.StoreCurrency.$currencyKey)
-        
-        static func uniqueID(from source: AllCurrencies.Currency, in transaction: BaseDataTransaction) throws -> String? {
-            return source.key
+    }
+}
+extension AllCurrencies.StoreCurrency {
+    func toDict() -> Dictionary<String, Any> {
+        var dict = Dictionary<String, Any>()
+        self.cs_toRaw().entity.attributesByName.forEach { (field, value) in
+            dict[field] = self.cs_toRaw().getValue(forKvcKey: field)
         }
-        
-        func update(from source: AllCurrencies.Currency, in transaction: BaseDataTransaction) throws {
-            self.currencyKey = source.key
-            self.value = source.value
-        }
+        return dict
     }
 }

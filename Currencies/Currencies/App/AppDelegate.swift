@@ -7,6 +7,7 @@
 
 import Moya
 import UIKit
+import CoreStore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appCoordinator.start(with: option(from: launchOptions))
         NetworkActivityLogger.shared.level = .debug
         NetworkActivityLogger.shared.startLogging()
+        setupCoreStoreDataStack()
         return true
     }
 
@@ -64,5 +66,17 @@ private extension AppDelegate {
         let provider = MoyaProvider<MultiTarget>(plugins: [networkLoggerPlugin])
         let networkManager = NetworkManager(provider: provider)
         return networkManager
+    }
+    
+    private func setupCoreStoreDataStack() {
+        do {
+            try CurrenciesLocalService.dataStack.addStorageAndWait(
+                SQLiteStore(
+                    fileName: "StoreCurrency.sqlite",
+                    localStorageOptions: .recreateStoreOnModelMismatch
+                ))
+        } catch {
+            print(error)
+        }
     }
 }

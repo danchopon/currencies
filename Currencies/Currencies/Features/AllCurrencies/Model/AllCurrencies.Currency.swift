@@ -8,7 +8,7 @@
 import Foundation
 
 extension AllCurrencies {
-    class Currency {
+    class Currency: Codable {
         let key: String
         let value: Double
         
